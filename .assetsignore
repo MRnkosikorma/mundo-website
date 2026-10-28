@@ -1,0 +1,9 @@
+node_modules
+.git
+.github
+package.json
+package-lock.json
+bun.lock
+bun.lockb
+README.md
+wrangler.jsonc
