@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none" aria-label="NUST Mobility Logo">
+  <!-- Transit Path / Network Node Icon -->
+  <g transform="translate(4, 6)">
+    <!-- Rounded Shield / Transit Node Container -->
+    <rect x="0" y="0" width="52" height="52" rx="14" fill="#064e3b" />
+    <!-- Gradient Glow Accent -->
+    <circle cx="26" cy="26" r="18" fill="url(#logoGlow)" opacity="0.18" />
+    <!-- Connected Mobility Line -->
+    <path d="M14 36 C18 20, 34 20, 38 16" stroke="#34d399" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M14 36 C22 36, 30 28, 38 28" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 3"/>
+    <!-- Node Dots -->
+    <circle cx="14" cy="36" r="4.5" fill="#ffffff" stroke="#10b981" stroke-width="2.5" />
+    <circle cx="38" cy="16" r="4.5" fill="#34d399" stroke="#ffffff" stroke-width="2" />
+    <circle cx="26" cy="26" r="2.5" fill="#ffffff" />
+  </g>
+
+  <!-- Typography -->
+  <text x="68" y="32" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.5" fill="#0f172a">
+    NUST
+  </text>
+  <text x="134" y="32" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="22" letter-spacing="0.5" fill="#059669">
+    MOBILITY
+  </text>
+  <!-- Prototype Tag -->
+  <rect x="69" y="40" width="62" height="15" rx="4" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1" />
+  <text x="75" y="51" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="600" font-size="8.5" letter-spacing="0.5" fill="#047857">
+    PROTOTYPE
+  </text>
+
+  <defs>
+    <radialGradient id="logoGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#064e3b" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+</svg>

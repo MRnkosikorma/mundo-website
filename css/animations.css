@@ -1,0 +1,97 @@
+/* ==========================================================================
+   NUST MOBILITY — ANIMATIONS & ACCESSIBILITY OVERRIDES
+   ========================================================================== */
+
+/* ─── Keyframe Animations ─────────────────────────────────────────────────── */
+
+@keyframes pulseAnimation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* ─── Accessibility: Reduced Motion Media Query ──────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .pulse-dot,
+  .animate-float {
+    animation: none !important;
+  }
+
+  .site-header {
+    backdrop-filter: none !important;
+    background-color: #ffffff !important;
+  }
+}
+
+/* ─── Print Stylesheet ───────────────────────────────────────────────────── */
+
+@media print {
+  .site-header,
+  .hamburger-btn,
+  .mobile-nav-drawer,
+  .btn,
+  .form-card,
+  .final-cta-section {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .faq-answer {
+    max-height: none !important;
+    opacity: 1 !important;
+  }
+}

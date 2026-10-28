@@ -1,0 +1,21 @@
+{
+  "name": "mundo-mobility-website",
+  "version": "1.0.0",
+  "description": "Static landing website for Mundo — A WhatsApp-based student transport payment initiative in Bulawayo, Zimbabwe.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y serve . -l 8080",
+    "serve": "python3 -m http.server 8080",
+    "test": "echo \"Checking static files...\" && test -f index.html && test -f 404.html && test -f legal.html && test -f privacy.html && test -f terms.html && test -f cookies.html && test -f payments.html && test -f robots.txt && test -f sitemap.xml && test -f _headers && test -f site.webmanifest && echo \"All static production files verified successfully.\""
+  },
+  "keywords": [
+    "mundo",
+    "mundo-mobility",
+    "bulawayo",
+    "zimbabwe",
+    "student-transport",
+    "whatsapp-mobility"
+  ],
+  "author": "Mundo Team",
+  "license": "MIT"
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-ZW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07081a">
+  <script>
+    (function() {
+      var saved = null;
+      try { saved = localStorage.getItem('mundo-theme'); } catch(e) {}
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <title>404 — Route Not Found | Mundo</title>
+  <meta name="description" content="The page you requested was not found. Return to the Mundo commuter homepage.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="alternate icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body class="not-found-page">
+  <main class="not-found-card">
+    <a class="brand footer-brand" href="/" aria-label="Mundo home">
+      <img src="assets/mundo-logo.png" width="104" height="44" alt="Mundo">
+    </a>
+    <p class="eyebrow"><span class="eyebrow-icon" aria-hidden="true"></span> 404 &mdash; Off Route</p>
+    <h1>Stop not found.</h1>
+    <p>The page or route you were looking for doesn't exist or has moved. Let's get you back on track.</p>
+    <a class="button button-primary" href="/">Return to Homepage</a>
+  </main>
+</body>
+</html>

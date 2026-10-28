@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 540" fill="none" aria-label="Illustrative WhatsApp concept for Mundo">
+  <defs>
+    <!-- Device Drop Shadow -->
+    <filter id="phoneShadow" x="-10%" y="-10%" width="125%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#064e3b" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="phoneBorder" x1="0" y1="0" x2="380" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="360" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Smartphone Frame -->
+  <g filter="url(#phoneShadow)">
+    <rect x="10" y="10" width="360" height="520" rx="38" fill="#ffffff" stroke="url(#phoneBorder)" stroke-width="2.5"/>
+  </g>
+
+  <!-- Screen Bezel Background -->
+  <rect x="16" y="16" width="348" height="508" rx="32" fill="#efeae2"/>
+
+  <!-- Speaker / Camera Notch -->
+  <rect x="145" y="24" width="90" height="18" rx="9" fill="#0f172a"/>
+  <circle cx="215" cy="33" r="3.5" fill="#1e293b"/>
+  <circle cx="165" cy="33" r="2.5" fill="#334155"/>
+
+  <!-- WhatsApp App Header -->
+  <rect x="16" y="46" width="348" height="64" fill="url(#headerGrad)"/>
+  <!-- Back Arrow -->
+  <path d="M36 78 L46 70 M36 78 L46 86" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Avatar with Mundo Vibrant Ring -->
+  <rect x="58" y="56" width="42" height="42" rx="21" fill="#0f172a" stroke="#34d399" stroke-width="1.8"/>
+  <circle cx="74" cy="72" r="5" fill="#f43f5e"/>
+  <circle cx="83" cy="70" r="6" fill="#3b82f6"/>
+  <circle cx="80" cy="80" r="7" fill="#10b981"/>
+  <!-- Verified Badge -->
+  <circle cx="94" cy="62" r="5" fill="#10b981"/>
+  <path d="M92 62 L93.5 63.5 L96.5 60.5" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Contact Info -->
+  <text x="108" y="73" font-family="'Roboto', sans-serif" font-weight="900" font-size="16" fill="#ffffff">Mundo</text>
+  <text x="108" y="89" font-family="'Roboto', sans-serif" font-weight="700" font-size="11" fill="#a7f3d0">Smart Student Mobility</text>
+
+  <!-- Illustrative Concept Notice Banner -->
+  <rect x="36" y="120" width="308" height="24" rx="6" fill="#fef3c7" stroke="#fcd34d" stroke-width="0.8"/>
+  <text x="190" y="136" text-anchor="middle" font-family="'Roboto', sans-serif" font-weight="700" font-size="9.5" fill="#92400e">
+    ⚡ Illustrative Concept Mockup — In Development
+  </text>
+
+  <!-- Message 1 (Incoming from Bot) -->
+  <g transform="translate(30, 154)">
+    <rect x="0" y="0" width="280" height="74" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+    <text x="14" y="24" font-family="'Roboto', sans-serif" font-weight="900" font-size="12.5" fill="#064e3b">
+      👋 Salibonani! Welcome to Mundo
+    </text>
+    <text x="14" y="42" font-family="'Roboto', sans-serif" font-weight="700" font-size="11" fill="#334155">
+      Your campus WhatsApp transport assistant.
+    </text>
+    <text x="14" y="58" font-family="'Roboto', sans-serif" font-weight="700" font-size="11" fill="#334155">
+      Select an option to proceed:
+    </text>
+    <text x="245" y="66" font-family="'Roboto', sans-serif" font-size="9" font-weight="700" fill="#94a3b8">09:41</text>
+  </g>
+
+  <!-- Interactive Quick Reply Buttons -->
+  <g transform="translate(42, 236)">
+    <rect x="0" y="0" width="138" height="32" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2"/>
+    <text x="69" y="20" text-anchor="middle" font-family="'Roboto', sans-serif" font-weight="700" font-size="11" fill="#047857">
+      🚌 Pay Kombi Fare
+    </text>
+
+    <rect x="146" y="0" width="144" height="32" rx="16" fill="#f0fdf4" stroke="#059669" stroke-width="1.2"/>
+    <text x="218" y="20" text-anchor="middle" font-family="'Roboto', sans-serif" font-weight="700" font-size="11" fill="#047857">
+      💳 Mundo Wallet
+    </text>
+  </g>
+
+  <!-- Message 2 (User reply) -->
+  <g transform="translate(140, 280)">
+    <rect x="0" y="0" width="170" height="38" rx="14" fill="#d9fdd3" stroke="#bbf7d0" stroke-width="0.8"/>
+    <text x="14" y="24" font-family="'Roboto', sans-serif" font-weight="700" font-size="11.5" fill="#0f172a">
+      🚌 Pay Kombi Fare
+    </text>
+    <text x="135" y="28" font-family="'Roboto', sans-serif" font-weight="700" font-size="9" fill="#15803d">✓✓</text>
+  </g>
+
+  <!-- Message 3 (Bot Response - Simple Interaction) -->
+  <g transform="translate(30, 330)">
+    <rect x="0" y="0" width="288" height="92" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.8"/>
+    <text x="14" y="22" font-family="'Roboto', sans-serif" font-weight="900" font-size="11.5" fill="#064e3b">
+      ⚡ Pay Taxi / Kombi Route
+    </text>
+    <text x="14" y="40" font-family="'Roboto', sans-serif" font-weight="700" font-size="11" fill="#334155">
+      Enter vehicle plate or conductor ID:
+    </text>
+    <text x="14" y="58" font-family="'Roboto', sans-serif" font-weight="700" font-size="11" fill="#059669">
+      • Plate: ABZ 1234 (Kombi #14)
+    </text>
+    <text x="14" y="76" font-family="'Roboto', sans-serif" font-weight="700" font-size="11" fill="#059669">
+      • Route: City Centre ↔ NUST Campus
+    </text>
+    <text x="252" y="84" font-family="'Roboto', sans-serif" font-size="9" font-weight="700" fill="#94a3b8">09:42</text>
+  </g>
+
+  <!-- Message Input Bar Mockup -->
+  <g transform="translate(26, 434)">
+    <rect x="0" y="0" width="280" height="42" rx="21" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="20" cy="21" r="10" fill="#f1f5f9"/>
+    <text x="16" y="25" font-family="sans-serif" font-size="12">😊</text>
+    <text x="42" y="26" font-family="'Roboto', sans-serif" font-weight="700" font-size="11.5" fill="#94a3b8">Message Mundo...</text>
+    <circle cx="258" cy="21" r="13" fill="#f8fafc"/>
+    <path d="M255 16 L262 21 L255 26" stroke="#64748b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <!-- Mic Action Button -->
+    <circle cx="304" cy="21" r="19" fill="#10b981"/>
+    <path d="M304 14 C302.3 14 301 15.3 301 17 L301 22 C301 23.7 302.3 25 304 25 C305.7 25 307 23.7 307 22 L307 17 C307 15.3 305.7 14 304 14 Z" fill="#ffffff"/>
+    <path d="M298 20 C298 23.3 300.7 26 304 26 C307.3 26 310 23.3 310 20" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <line x1="304" y1="26" x2="304" y2="29" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

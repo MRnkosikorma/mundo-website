@@ -1,0 +1,21 @@
+{
+  "name": "Mundo Mobility",
+  "short_name": "Mundo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07081a",
+  "theme_color": "#07081a",
+  "description": "Bulawayo kombi fares, right in WhatsApp",
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/mundo-logo-badge.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

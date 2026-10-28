@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-ZW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07081a">
+  <script>
+    (function() {
+      function getPreferredTheme() {
+        var saved = null;
+        try { saved = localStorage.getItem('mundo-theme'); } catch(e) {}
+        if (saved === 'light' || saved === 'dark') return saved;
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) return 'light';
+        return 'dark';
+      }
+      function updateThemeUI(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        try { localStorage.setItem('mundo-theme', theme); } catch (e) {}
+        var isLight = theme === 'light';
+        var nextLabel = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+        var toggleBtn = document.getElementById('theme-toggle');
+        if (toggleBtn) {
+          toggleBtn.setAttribute('aria-label', nextLabel);
+          toggleBtn.setAttribute('title', nextLabel);
+        }
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', isLight ? '#f5f7fc' : '#07081a');
+      }
+      function toggleMundoTheme() {
+        var current = document.documentElement.getAttribute('data-theme') || 'dark';
+        var next = current === 'dark' ? 'light' : 'dark';
+        updateThemeUI(next);
+      }
+      window.updateThemeUI = updateThemeUI;
+      window.toggleMundoTheme = toggleMundoTheme;
+      document.documentElement.setAttribute('data-theme', getPreferredTheme());
+    })();
+  </script>
+  <title>Cookie Policy — Mundo Mobility</title>
+  <meta name="description" content="Cookie and local storage policy for Mundo Mobility website.">
+  <link rel="canonical" href="https://mundo.co.zw/cookies.html">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="alternate icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body class="legal-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/" aria-label="Mundo home">
+        <img src="assets/mundo-logo.png" width="120" height="51" alt="Mundo">
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="/#how-it-works">How it works</a>
+        <a href="/#for-you">For commuters</a>
+        <a href="/#operators">For operators</a>
+        <a href="/#faq">FAQs</a>
+      </nav>
+      <button type="button" class="theme-toggle" id="theme-toggle" onclick="window.toggleMundoTheme()" aria-label="Switch to light mode" title="Toggle theme">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+        </svg>
+      </button>
+      <a class="button button-primary nav-cta" href="https://wa.me/263788703767?text=Hi%20Mundo%2C%20I%27d%20like%20to%20get%20started." target="_blank" rel="noopener noreferrer">
+        Start on WhatsApp <svg class="icon ext-icon" aria-hidden="true"><use href="assets/icons.svg#i-external"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-shell" id="main">
+    <a class="legal-back" href="legal.html">&larr; Back to <span>Legal Centre</span></a>
+    
+    <div style="margin-top: 18px;">
+      <p class="eyebrow"><span class="eyebrow-icon" aria-hidden="true"></span> Privacy By Design</p>
+      <h1>Cookie Policy</h1>
+      <p class="legal-meta">Updated October 2026 &bull; Bulawayo, Zimbabwe</p>
+    </div>
+
+    <nav class="legal-nav" aria-label="Legal documents">
+      <a href="legal.html">Overview</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="privacy.html">Privacy Notice</a>
+      <a href="cookies.html" aria-current="page">Cookie Policy</a>
+      <a href="payments.html">Payments &amp; Refunds</a>
+    </nav>
+
+    <div class="legal-body">
+      <div class="legal-note">
+        <strong>Zero-Tracking Policy:</strong> The Mundo website does NOT use third-party advertising cookies, cross-site trackers, or commercial profiling scripts.
+      </div>
+
+      <section>
+        <h2>1. What We Store in Your Browser</h2>
+        <p>The only client-side storage used on this website is HTML5 <code>localStorage</code>, used solely to remember your theme preference:</p>
+        <ul>
+          <li><strong>Item Key:</strong> <code>mundo-theme</code></li>
+          <li><strong>Possible Values:</strong> <code>dark</code> or <code>light</code></li>
+          <li><strong>Purpose:</strong> Ensures your chosen visual theme is preserved when you return to the page.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2. Managing Your Preferences</h2>
+        <p>You can toggle between Light Mode and Dark Mode at any time using the header toggle button. You can also clear browser storage in your browser settings at any time without affecting website usability.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-main">
+      <div class="footer-brand-block">
+        <a class="brand footer-brand" href="/" aria-label="Mundo home"><img src="assets/mundo-logo.png" width="112" height="47" alt="Mundo"></a>
+        <p>Everyday mobility, made simpler.<br>Built in Bulawayo, Zimbabwe.</p>
+      </div>
+      <div class="footer-links">
+        <div><strong>Explore</strong><a href="/#how-it-works">How it works</a><a href="/#for-you">For commuters</a><a href="/#operators">For operators</a><a href="/#faq">FAQs</a></div>
+        <div><strong>Legal</strong><a href="legal.html">Legal Centre</a><a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy Policy</a><a href="cookies.html">Cookie Policy</a><a href="payments.html">Payments &amp; Refunds</a></div>
+        <div><strong>Get in touch</strong><a href="https://wa.me/263788703767" target="_blank" rel="noopener noreferrer">WhatsApp Mundo</a><span>+263 78 870 3767</span></div>
+      </div>
+      <p class="footer-disclaimer"><strong>Mundo is an independent service</strong> operating on the NUST&ndash;Bulawayo CBD corridor.</p>
+    </div>
+    <div class="page-shell footer-bottom">
+      <span>&copy; <span id="year">2026</span> Mundo Mobility. Made for Zimbabwe.</span>
+      <span>Never share your payment PIN or password in a chat.</span>
+    </div>
+  </footer>
+  <script src="js/main.js?v=2" defer></script>
+</body>
+</html>
